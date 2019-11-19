@@ -3,32 +3,32 @@
 import random, sys
 
 def clos():
-    print('goodbye'\
-          ' until next time')
+    print('do widzenia'\
+          ' nastepnym razem')
     sys.exit()
 
-print('what is your name?: ')
+print('jak masz na imie?: ')
 name = input()
 
-print('ok, hello ' + name + ' im thinking of a number between 0 and 50 ')
+print('ok, witam ' + name + ' mysle nad liczba od 0 do 50 ')
 liczba = random.randint(0,50)
 
 #print('DEBUG '+str(liczba))
 
 for ilosczgadyw in range(1, 7):
-    print('take a guess: ')
+    print('zgaduj liczbe: ')
     zgad = int(input())
 
     if zgad < liczba:
-        print('too low')
+        print('za niska')
     elif zgad > liczba:
-        print('too high')
+        print('za wysoka')
     else:
         break # jak wykorzysta range (1-7) 6 razy zle odpowie
 
 if zgad == liczba:
-    print('good job ' + name + ' you managed in: ' + str(ilosczgadyw) + ' guesses!')
+    print('dobra robota ' + name + ' odgadywanie zajelo: ' + str(ilosczgadyw) + ' prob!')
 else:
-    print('unfortunately, the number was: ' + str(liczba))
+    print('niestety, liczba ktora wylosowalem to: ' + str(liczba))
 
 clos()
