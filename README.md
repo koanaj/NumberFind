@@ -1,4 +1,4 @@
 # NumberFind
-Simple python program calling a random number between 0-50 and asking to take a guess.
-Remove '#' before DEBUG to see the selected random number before you take a guess.
+Prosty program w python wybierajacy losową liczbę od 0-50 pozwalając na znalezienie tej liczby.
+Usunąć '#' przed linią 'DEBUG' aby zobaczyć wybraną liczbę przed zgadywaniem.
 
